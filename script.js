@@ -71,34 +71,3 @@ document.querySelectorAll('.Tapbar a').forEach(link => {
     });
 });
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Display Images</title>
-  </head>
-  <body>
-    <h1>All Images</h1>
-    <div id="image-container"></div>
-
-    <script>
-      const imageFiles = [
-        "LearnHuff.png",
-        "Profile.png",
-        "PromptJai Clinic.png",
-        "Rentbow.png"
-        // เพิ่มชื่อไฟล์ภาพทั้งหมดที่ต้องการ
-      ];
-
-      const container = document.getElementById("image-container");
-      imageFiles.forEach((image) => {
-        const img = new Image();
-        img.src = `images/${image}`; // แทนที่ 'images/' ด้วยเส้นทางที่ถูกต้อง
-        img.alt = image;
-        container.appendChild(img);
-      });
-    </script>
-  </body>
-</html>
-
