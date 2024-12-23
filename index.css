@@ -1,0 +1,1085 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'serif', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 7%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #000000;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+.logo {
+    position: relative;
+    font-size: 30px;
+    color: #b74b4b;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.portfolio {
+    color: #ffffff;
+}
+
+.siri {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.Tapbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin-top: 0;
+}
+
+.Tapbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 70px;
+    transition: .15s;
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+.Tapbar a:hover,
+.Tapbar a:focus {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.Tapbar a.active {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+    text-decoration: underline;
+}
+
+
+.Tapbar a:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.Tapbar a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.Tapbar a:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.Tapbar a:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.Tapbar a:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.Tapbar a:hover {
+    text-shadow: 0 0 10px#b74b4b;
+    transform: scale(1.2);
+    transition: color 0.3s ease, text-shadow 0.3s ease transform 0.3s ease;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.Home {
+    position: relative;
+    color: white;
+    width: 100%;
+    justify-content: flex-start;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Home img {
+    width: 32vw;
+    border-radius: 50%;
+}
+
+
+.home_content {
+    position: relative;
+    max-width: 600px;
+    margin-right: 250px;
+    flex: 1;
+}
+
+.home_content h3 {
+    font-size: clamp(16px, 3vw, 33px);
+    font-weight: 700;
+    margin: 0 0 10px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home_content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home_content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.section img {
+    max-width: 450px;
+    height: auto;
+    margin-left: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(30px, 5vw, 50px);
+    height: clamp(30px, 5vw, 50px);
+    background: transparent;
+    border: 2px solid #b74b4b;
+    border-radius: 50%;
+    font-size: 24px;
+    text-emphasis: none;
+    margin: 15px 20px 30px 0;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.home-sci a:hover {
+    background: #b74b4b;
+    color: #000000;
+    box-shadow: 0 0 20px#b74b4b;
+    transform: scale(1.2);
+    transition: box-shadow 0.3 ease, transform 3s ease;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.Btn_box {
+    display: inline-block;
+    padding: 12px 32px;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    border-radius: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideBottom 1s ease forwards;
+}
+
+.Btn_box:hover {
+    box-shadow: 0 0 20px#b74b4b;
+    transform: translateY(-5px);
+    transition: transform 3s ease;
+}
+
+.text1 {
+    font-size: clamp(14px, 2.5vw, 28px);
+    display: inline-block;
+    margin-left: 10px;
+    text-align: left;
+    white-space: nowrap;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.OHM {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.Home,
+.About {
+    padding: 50px 10%;
+}
+
+
+.About {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.About_img img {
+    padding-top: 20px;
+    max-width: 630px;
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.About_text h2 {
+    font-size: 48px;
+    color: #ffffff;
+    animation: slideTop 1.5s ease forwards;
+}
+
+.About_text h2 span {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.About_text h4 {
+    font-size: 29px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+    animation: slideBottom 1.5s ease forwards;
+}
+
+.About_text p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 1rem 0;
+    text-align: justify;
+    animation: slideRight 2s ease forwards;
+}
+
+
+/* section My skills */
+.Sub_title {
+    margin-top: 0;
+    padding-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    animation: slideTop 1.5s ease forwards;
+}
+
+.Sub_title span {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.python-icon {
+    background: linear-gradient(270deg, #306998, #FFD43B);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Skills {
+    width: 600px;
+    height: auto;
+    padding: 75px 90px;
+    margin-left: 100px;
+}
+
+.heading1 {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    animation: slideTop 2s ease forwards;
+}
+
+
+.Skills_bar .bar {
+    margin: 20px 0;
+    font-size: 23px;
+}
+
+.Skills_bar .bar .info {
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.Skills_bar .bar:first-child {
+    margin-top: 0;
+}
+
+.Skills_bar .bar:last-child {
+    margin-bottom: 0;
+}
+
+.Skills_bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 1s 1s linear forwards;
+    opacity: 0;
+}
+
+.Skills_bar .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.Skills_bar .bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(0.5, 0, 0.5, 1) forwards;
+}
+
+.progress-line.html span {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    width: 85%;
+}
+
+.progress-line.css span {
+    background: linear-gradient(270deg, #1572B6, rgb(51, 128, 158));
+    width: 70%;
+}
+
+.progress-line.javascript span {
+    background: linear-gradient(270deg, #caa726, #FFD43B);
+    width: 50%;
+}
+
+.progress-line.php span {
+    background-color: #8c6be6;
+    width: 40%;
+}
+
+.progress-line.sql span {
+    background-color: #ec8a1a;
+    width: 80%;
+}
+
+.progress-line.flutter span {
+    background: linear-gradient(270deg, #1572B6, rgb(51, 128, 158));
+    width: 55%;
+}
+
+.progress-line.python span {
+    background: linear-gradient(270deg, #306998, #FFD43B);
+    width: 60%;
+}
+
+.progress-line span::after {
+    content: attr(data-label);
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "70%";
+}
+
+.progress-line.javascript span::after {
+    content: "85%";
+}
+
+.progress-line.php span::after {
+    content: "55%";
+}
+
+.progress-line.sql span::after {
+    content: "80%";
+}
+
+.progress-line.python span::after {
+    content: "50%";
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.radial_bars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.radial_bars .Soft_Skills_bar {
+    flex-basis: calc(33.33% - 15px);
+    height: 150px;
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radial_bars .Soft_Skills_bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.radial_bars .Soft_Skills_bar .circle_bar {
+    stroke-width: 10;
+    fill: transparent;
+    stroke: rgb(0, 0, 0);
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 0.7s linear forwards;
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #ff7e5f;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-path 2s linear forwards;
+    transition: all 0.3s ease;
+}
+
+.path-1 {
+    animation: animate-path1 2s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path2 2s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path3 2s linear forwards;
+}
+
+.path-4 {
+    animation: animate-path4 2s linear forwards;
+}
+
+.path-5 {
+    animation: animate-path5 2s linear forwards;
+}
+
+.path-6 {
+    animation: animate-path6 2s linear forwards;
+}
+
+.path-7 {
+    animation: animate-path7 2s linear forwards;
+}
+
+
+.radial_bars .percentage {
+    position: absolute;
+    color: #eee;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.radial_bars .text {
+    width: 100%;
+    color: #eee;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+    bottom: -20px;
+}
+
+/* section My Projects */
+.main_text {
+    padding: 100px 0 0 20px;
+    margin-top: 0;
+}
+
+.main_text h2 {
+    margin-top: 50px;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    animation: slideTop 1.5s ease forwards;
+}
+
+.main_text h2 span {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.portfolio_content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 30px 20px;
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgb(0, 0, 0, 0.8), #000000);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.row:hover .layer {
+    height: 300px;
+}
+
+
+.layer h5 {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #eee);
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #eee);
+    background-clip: text;
+    color: transparent;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 90%;
+}
+
+.layer i {
+    color: #ff7e5f;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #000000;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.layer a {
+    text-decoration: none;
+}
+
+.row:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.row:hover .layer {
+    height: 350px;
+    transition: height 0.5s ease;
+}
+
+/* Contact Page */
+
+.Contact {
+    padding-top: 150px;
+}
+
+.heading {
+    margin-top: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    animation: slideTop 1.5s ease forwards;
+}
+
+.heading span {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.Contact h2 {
+    margin-bottom: 2rem;
+    color: white
+}
+
+.Contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.Contact form .input_box input,
+.Contact form textarea {
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    border-radius: 2rem;
+    border: 2px solid #ff7e5f;
+    margin: 1.5rem 0;
+    resize: none;
+    animation: slideBottom 1s ease;
+}
+
+.Contact form .input_box input:focus,
+.Contact form textarea:focus {
+    box-shadow: 0 0 5px #ff7e5f, 0 0 15px #feb47b;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.Contact form .input_box input::placeholder,
+.Contact form textarea::placeholder {
+    color: #feb47b;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.Contact form button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+/* bottom contact */
+.footer {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+.footer .social-icon {
+    text-align: center;
+}
+
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(30px, 5vw, 50px);
+    height: clamp(30px, 5vw, 50px);
+    background: transparent;
+    border: 2px solid #b74b4b;
+    border-radius: 50%;
+    font-size: 24px;
+    text-emphasis: none;
+    margin: 15px 20px 30px 0;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.social-icon a:hover {
+    background: #b74b4b;
+    color: #000000;
+    box-shadow: 0 0 20px#b74b4b;
+    transform: scale(1.2);
+    transition: box-shadow 0.3 ease, transform 3s ease;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer ul {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid #ff7e5f;
+}
+
+.footer .copyright {
+    color: #eee;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.footer .copyright1 {
+    color: #eee;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.footer .copyright p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#menu-icon:hover {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 1285px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .Tapbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid #ff7e5f;
+        border-bottom: 2px solid #ff7e5f;
+        display: none;
+    }
+
+    .Tapbar.active {
+        display: block;
+    }
+
+    .Tapbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+        text-align: left;
+    }
+
+    .Home {
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+
+    .About {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .About_text h2 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+@media (min-width: 1286px) {
+    #menu-icon {
+        display: none;
+    }
+
+    .Tapbar {
+        position: static;
+        width: auto;
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .Tapbar a {
+        margin: 0 20px;
+        color: white;
+    }
+}
+
+@media (max-width: 900px) {
+    .portfolio_content {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio_content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 100.4;
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 75.3;
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 75.3;
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 100.4;
+    }
+}
+
+@keyframes animate-path5 {
+    100% {
+        stroke-dashoffset: 75.3;
+    }
+}
+
+@keyframes animate-path6 {
+    100% {
+        stroke-dashoffset: 100.4;
+    }
+}
+
+@keyframes animate-path7 {
+    100% {
+        stroke-dashoffset: 50.2;
+    }
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transfrom: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transfrom: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transfrom: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transfrom: translateY(0px);
+        opacity: 1;
+    }
+}
