@@ -1,4 +1,4 @@
-# MYWEBSITE - Personal Portfolio
+# MYWEBSITE - Siri Portfolio
 
 MYWEBSITE is a personal portfolio website showcasing the skills, interests, and projects of **Siri Meesuk**. It includes detailed information about the various skills, soft skills, and projects like LearnHuff, PromptJai Clinic, and Rentbow. The website also features smooth scrolling, active navigation, and responsive design for a seamless user experience across devices.
 
